@@ -1,0 +1,8 @@
+# Client Side
+node_modules/
+dist/
+yarn.lock
+.env
+# Server Side
+node_modules
+.vercel
