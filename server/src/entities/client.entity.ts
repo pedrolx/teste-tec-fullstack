@@ -20,7 +20,7 @@ export class Client {
     @CreateDateColumn()
     createdAt: Date
 
-    @OneToMany(()=> Contact, contact => contact.client)
+    @OneToMany(()=> Contact, contact => contact.client, { eager: true })
     contacts: Contact[]
 
 }

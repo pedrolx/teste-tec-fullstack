@@ -17,7 +17,7 @@ export class Contact {
     @Column({nullable: false})
     phone: string
 
-    @ManyToOne(() => Client, { eager: true })
+    @ManyToOne(() => Client)
     client: Client;
 
 }
